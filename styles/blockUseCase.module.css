@@ -1,0 +1,48 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++ PAGE 04 :: Blocks Use Case +++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
+.blocks_head_title {
+  background: url(../public/images/background-head-title.png) no-repeat top
+    center;
+  background-size: cover;
+}
+
+.blocks_head_arvic {
+  background: url(../public/images/blocks-use-case/background-head-arvic.jpg)
+    no-repeat top center;
+  background-size: cover;
+}
+
+.blocks_head_beaut {
+  background: url(../public/images/blocks-use-case/background-head-beaut.png)
+    no-repeat center center;
+  background-size: cover;
+}
+
+.blocks_head_nextcercise {
+  background: url(../public/images/blocks-use-case/background-head-nextcercise.png)
+    no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .w_blocks_use_case {
+    width: 175px;
+  }
+
+  .position_content {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .position_content {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .w_blocks_use_case {
+    width: 135px;
+  }
+}

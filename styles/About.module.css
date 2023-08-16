@@ -1,0 +1,93 @@
+/*+++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++ PAGE 02 :: About Us +++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++*/
+.blocks_head_title01 {
+  background: url(../public/images/about-us/background-head-title.png) no-repeat
+    top center;
+  background-size: cover;
+}
+
+.blocks_our_team {
+  background: url(../public/images/about-us/background-our-team.png) no-repeat
+    top center;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: transparent;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0px;
+  font-family: "Kanit", sans-serif;
+}
+
+.card.our_team {
+  background: linear-gradient(180deg, #045fb5 0%, #08457e 100%);
+  box-shadow: 0px 6px 6px rgba(0, 27, 77, 0.5);
+  border-radius: 15px;
+  padding: 30px 10px;
+  border: 1px solid #255889;
+}
+
+.text_team {
+  height: 132px;
+  text-align: center;
+}
+
+.text_position {
+  color: #15fc7e;
+  word-wrap: break-word;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.team_pictures {
+  width: 75%;
+  border-radius: 15px;
+  border: 1px solid #275caf;
+  padding: 8px;
+}
+
+@media (max-width: 1200px) {
+  .team_pictures {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .blocks_our_team {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .blocks_our_team {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 575px) {
+  .text_team {
+    height: 120px;
+  }
+
+  .blocks_our_team {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .text_team {
+    height: 120px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text_team {
+    height: 135px;
+  }
+}

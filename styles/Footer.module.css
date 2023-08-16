@@ -1,0 +1,24 @@
+.footerLink li {
+  padding: 0 7px;
+  display: inline;
+  margin-bottom: 0;
+  border-left: 1px solid #aaaaaa;
+}
+
+.footerLink ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footerLink li:first-child {
+  border: none;
+}
+
+.footerLink a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footerLink a:hover {
+  color: #c6c6c6;
+}
