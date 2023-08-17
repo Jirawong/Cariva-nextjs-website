@@ -1,0 +1,178 @@
+/* Custom CSS for hoverable dropdown */
+
+.navbar {
+  z-index: 1000 !important;
+}
+/* Custom styles for the navbar */
+.navbar_toggler_icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar_toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M3 3L27 27M3 27l24-24'/%3e%3c/svg%3e");
+}
+
+.navbar_toggler_icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar_toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+.navbar_toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+.navbar_toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.bg_blue_nav {
+  background-color: #084c8c !important;
+  font-weight: 500 !important;
+}
+
+.navbar_nav {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.navbar_dark .navbar-nav .nav_link {
+  color: rgba(255, 255, 255);
+}
+
+.navbar_toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.navbar_dark .navbar_nav .nav_link.active,
+.navbar_dark .navbar_nav .show > .nav_link {
+  color: #11264a;
+  background-color: #000000;
+  background: linear-gradient(90deg, #a9d284 0%, #52adba 50%, #0161ba 100%);
+  font-weight: 500;
+}
+
+.navbar_dark .navbar_nav .nav_link:focus,
+.navbar_dark .navbar_nav .nav_link:hover {
+  color: rgba(255, 255, 255, 0.75);
+  color: #11264a;
+  background-color: #000000;
+  background: linear-gradient(90deg, #a9d284 0%, #52adba 50%, #0161ba 100%);
+  font-weight: 500;
+}
+
+.dropdown_item {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  clear: both;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #084b8a;
+  left: 0;
+  border: 0;
+  border-top: 1px solid #215e98;
+  height: auto;
+  line-height: normal;
+}
+
+.dropdown_menu {
+  position: absolute;
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  border-radius: 0;
+}
+
+.dropdown_item:focus,
+.dropdown_item:hover {
+  color: #11264a;
+  background-color: #ffffff;
+  color: #11264a;
+  background-color: #000000;
+  background: linear-gradient(90deg, #a9d284 0%, #52adba 50%, #0161ba 100%);
+  font-weight: 500;
+}
+
+.dropdown_item.active,
+.dropdown_item:active {
+  text-decoration: none;
+  color: #11264a;
+  background-color: #000000;
+  background: linear-gradient(90deg, #a9d284 0%, #52adba 50%, #0161ba 100%);
+  font-weight: 500;
+}
+
+.nav_item {
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 82px;
+  line-height: 64px;
+  background-color: #084c8c;
+}
+
+.flare {
+  background: #ef662b;
+}
+
+.flare a.nav-link {
+  color: #fff !important;
+}
+
+.topbarElements > div:nth-of-type(1) {
+  font-size: 48px;
+  margin: 12px 32px;
+  color: #ef662b;
+}
+
+@media screen and (max-width: 1399px) {
+  .h_nav {
+    margin-top: 64px;
+  }
+
+  .navbar_dark .navbar-nav .nav-link.active,
+  .navbar_dark .navbar-nav .show > .nav-link {
+    padding: 0.65rem 1rem;
+  }
+
+  .navbar_dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255);
+    padding: 0.65rem 1rem;
+  }
+
+  .nav_item {
+    font-size: 18px;
+    text-transform: uppercase;
+    height: auto;
+    line-height: 18px;
+    background-color: #084c8c;
+  }
+
+  .navbar_nav {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .nav_item {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1px;
+  }
+}
