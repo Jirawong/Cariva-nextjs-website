@@ -13,9 +13,20 @@ module.exports = {
         sm: "0.125rem",
         lg: "0.125rem",
         xl: "0rem",
-        "2xl": "6.75rem",
+        "2xl": "4rem",
       },
     },
+     screens: {
+      'sm': '640px',
+
+      'md': '768px',
+
+      'lg': '992px',
+
+      'xl': '1200px',
+
+      '2xl': '1400px',
+    }
   },
   plugins: [],
 };

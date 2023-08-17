@@ -63,7 +63,7 @@ const Navmenu = () => {
           rel="stylesheet"
         />
       </head>
-      <div className="lg:container xl:px-32 lg:px-24 px-5 mx-auto flex justify-between items-center">
+      <div className="lg:container px-5 mx-auto flex justify-between items-center">
         <Link href="/" className={styles.navbar_brand}>
           <Image
             src={Logo}
@@ -86,7 +86,7 @@ const Navmenu = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="lg:hidden">
+        <div className="2xl:hidden">
           <button
             onClick={toggleMenu}
             className="text-white text-xl focus:outline-none"
@@ -96,7 +96,7 @@ const Navmenu = () => {
         </div>
 
         <ul
-          className={`${styles.navbar_nav} lg:flex justify-center lg:block hidden`}
+          className={`${styles.navbar_nav} 2xl:flex justify-center hidden`}
         >
           <li className={`${styles.nav_item}`}>
             <Link
@@ -215,7 +215,7 @@ const Navmenu = () => {
       </div>
       {isMenuOpen && (
         <ul
-          className={`${styles.navbar_nav} mx-auto lg:flex justify-center lg:hidden px-3  py-4`}
+          className={`${styles.navbar_nav} mx-auto justify-center 2xl:hidden px-3  py-4`}
         >
           <li className={`${styles.nav_item}`}>
             <Link

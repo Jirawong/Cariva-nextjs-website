@@ -80,6 +80,31 @@ const AboutPage = () => {
                 `<div className="nav-btn prev-slide"></div>`,
                 `<div className="nav-btn next-slide"></div>`,
               ]}
+                responsiveClass
+        responsive={{
+          0: {
+            items: 2,
+            nav: false,
+          },
+          320: {
+            items: 2,
+            nav: false,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          800: {
+            items: 4,
+            nav: false,
+          },
+          1000: {
+            items: 5,
+          },
+          1400: {
+            items: 6,
+          },
+        }}
             >
               <div className={`px-2`}>
                 <div className={`${styles.card}  ${styles.our_team}`}>
